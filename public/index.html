@@ -1,0 +1,26 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org">
+  <body ng-app="nearestcoffee">
+    <ng-view />
+
+    <script type="text/ng-template" id="nearestcoffee_index.html">
+        <button ng-click="nearestCoffee()">Show me the nearest coffee shops</button>
+
+        <ul>
+            <li ng-repeat="venue in venues">
+                <div>
+                    <h2>{{ venue.name }}</h2>
+                    <p>{{ venue.location.distance }} meters away</p>
+                </div>
+            </li>
+        </uL>
+    </script>
+
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-route/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/indexCtrl.js"></script>
+    <script src="js/services/geo.js"></script>
+    <script src="js/services/foursquare.js"></script>
+  </body>
+</html>

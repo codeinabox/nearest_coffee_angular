@@ -1,0 +1,9 @@
+{
+  "name": "Nearest Coffee",
+  "dependencies": {
+    "angular": ">=1.3.*",
+    "angular-route": ">=1.3.*"
+  },
+  "devDependencies": {
+  }
+}
